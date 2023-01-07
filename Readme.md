@@ -1,4 +1,4 @@
-## Example to create Dataflow Tenplate writing to BQ
+## Example to create Dataflow Template writing to BQ
 
 Referred from [GCP Documentation](https://cloud.google.com/dataflow/docs/guides/templates/creating-templates)
 
