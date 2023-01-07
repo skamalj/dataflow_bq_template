@@ -58,7 +58,7 @@ public static void main(String[] args) {
     // Get the value provider and pass it to MySumFn
    .apply(ParDo.of(new MySumFn(options.getInt())))
    .apply("Write to BigQuery", BigQueryIO.<Integer>write()
-        .to(String.format("%s:%s.%s", "gcdeveloper", "mydataset", "numbers"))
+        .to(String.format("%s:%s.%s", "<your project>", "mydataset", "numbers"))
         .withSchema(schema)
         .withFormatFunction(
           (Integer elem) -> new TableRow().set("i",elem))
