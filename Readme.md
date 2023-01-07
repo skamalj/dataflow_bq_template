@@ -7,7 +7,7 @@ Referred from [GCP Documentation](https://cloud.google.com/dataflow/docs/guides/
 ```
 mvn compile exec:java  -Dexec.mainClass=com.example.App \
         -Dexec.args="--runner=DataflowRunner \
-        --project=gcdeveloper \
+        --project=<your project> \
         --stagingLocation=<Staging Bucket Location> \
         --templateLocation=<Bucket location for template> \
         --region=asia-south-1" -e 
