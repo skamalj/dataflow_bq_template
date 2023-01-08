@@ -2,8 +2,10 @@
 
 Referred from [GCP Documentation](https://cloud.google.com/dataflow/docs/guides/templates/creating-templates)
 
-` Before executing below command update your project in App.java for BigqueryIO and create dataset and table (mydataset.numbers) with column "i" as integer (single column)
-`
+* Before executing below command update your project in App.java for BigqueryIO
+* Create dataset and table (mydataset.numbers) with column "i" as integer (single column)
+* This command creates template and saves it to GCS bucket as specified by template location
+* There is no need to provide any runtime parameters at this time, nothing is executed by this command, this only compiles and saves dataflow template
 
 ```
 mvn compile exec:java  -Dexec.mainClass=com.example.App \
